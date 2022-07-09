@@ -1,0 +1,89 @@
+.video {
+  margin-top: 35px;
+  @media (min-width: $md) {
+    margin-top: 50px;
+  }
+  @media (min-width: $lg) {
+    margin-top: 95px;
+  }
+  // .video__title
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 15px;
+    margin-top: 10px;
+    @media (min-width: $md) {
+      font-size: 30px;
+      line-height: 37px;
+    }
+    @media (min-width: $lg) {
+      font-size: 40px;
+      line-height: 49px;
+    }
+  }
+
+  // .video__description
+
+  &__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    margin-left: 15px;
+    margin-top: 25px;
+    @media (min-width: $md) {
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: 30px;
+    }
+    @media (min-width: $lg) {
+      margin-top: 65px;
+      margin-left: 20px;
+    }
+  }
+
+  // .video__content
+
+  &__content {
+    @media (min-width: $lg) {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+  }
+
+  // .video__background
+
+  &__background {
+    display: none;
+    @media (min-width: $lg) {
+      display: block;
+      position: absolute;
+      margin-left: 15px;
+    }
+  }
+
+  // .video__youtube
+
+  &__youtube {
+    width: 287px;
+    height: 163px;
+    margin-left: 15px;
+    margin-top: 15px;
+    @media (min-width: $md) {
+      margin-top: 20px;
+      width: 737px;
+      height: 419px;
+    }
+    @media (min-width: $lg) {
+      position: relative;
+      width: 771px;
+      height: 438px;
+      margin-left: 0px;
+      margin-top: 50px;
+    }
+  }
+}

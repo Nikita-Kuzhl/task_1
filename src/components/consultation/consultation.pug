@@ -1,0 +1,15 @@
+include ../../views/helpers/mixins
+
+section.consultation.container 
+  h1.consultation__title необходима консультация?
+  h2.consultation__subtitle оставьте заявку или свяжитесь с нами в социальных сетях
+  .consultation__contact 
+    +spriteIcons("consultation__icon")
+  form(action="/").consultation__form
+    h3.form__title Для <span>консультации</span> заполните форму!
+    h4.form__subtitle С Вами свяжутся в ближайшее время
+    .form__input-wrapper
+      input(type="text" placeholder="Ваше имя").form__input
+      input(type="text" placeholder="Ваш телефон").form__input
+      button(type="submit").form__button.show-mobile оставить заявку
+      button(type="submit").form__button.show-desktop отправить

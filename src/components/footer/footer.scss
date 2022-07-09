@@ -1,0 +1,149 @@
+.footer {
+  display: flex;
+  background-color: #0c2f33;
+  min-height: 70px;
+  margin: 60px -8px 0px;
+  @media (min-width: $md) {
+    margin-top: 45px;
+  }
+  @media (min-width: $lg) {
+    display: flex;
+    justify-content: center;
+    margin: 118px -8px -8px;
+    /* padding-top: 65px; */
+    padding: 65px 360px 90px;
+  }
+
+  // .footer__list-wrapper
+
+  &__list-wrapper {
+    display: none;
+    @media (min-width: $lg) {
+      display: flex;
+      margin: 0;
+      flex-direction: column;
+    }
+  }
+
+  // .footer__title
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: white;
+    display: none;
+    @media (min-width: $lg) {
+      display: flex;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+  }
+
+  // .footer__list
+
+  &__list {
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  // .footer__item
+
+  &__item {
+    margin-top: 18px;
+    list-style-type: none;
+    width: 50%;
+  }
+
+  // .footer__link
+
+  &__link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+  }
+
+  // .footer__contact
+
+  &__contact {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    font-family: Lato, sans-serif;
+
+    @media (min-width: $lg) {
+      margin: 0;
+      display: block;
+      width: 400px;
+    }
+  }
+
+  // .footer__work-time
+
+  &__work-time {
+    display: none;
+    @media (min-width: $lg) {
+      display: flex;
+      gap: 8px;
+    }
+  }
+  &__work-time-text {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    span {
+      color: $blue;
+    }
+  }
+
+  // .footer__address
+
+  &__address {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    display: none;
+    span {
+      color: $blue;
+    }
+    @media (min-width: $lg) {
+      margin-top: -5px;
+      display: flex;
+      gap: 11px;
+    }
+  }
+
+  // .footer__icons
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 0px;
+    @media (min-width: $lg) {
+      justify-content: start;
+      display: flex;
+      margin-top: 30px;
+      gap: 35px;
+    }
+  }
+  &__icon {
+    width: 22px;
+    height: 19px;
+    fill: $blue;
+    @media (min-width: $lg) {
+    }
+  }
+}

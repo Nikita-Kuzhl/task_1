@@ -1,0 +1,218 @@
+.consultation {
+  margin-top: 35px;
+  @media (min-width: $lg) {
+    margin-top: 85px;
+  }
+
+  // .consultation__title
+  &__title {
+    font-style: normal;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 15px;
+    @media (min-width: $md) {
+      font-size: 40px;
+      margin-left: 15px;
+    }
+    @media (min-width: $lg) {
+      font-size: 50px;
+      line-height: 40px;
+    }
+  }
+
+  // .consultation__subtitle
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: -15px;
+    margin-left: 12px;
+    @media (min-width: $md) {
+      font-size: 16px;
+      line-height: 30px;
+      margin-left: 30px;
+    }
+    @media (min-width: $lg) {
+      font-size: 22px;
+      line-height: 40px;
+      margin-top: -25px;
+    }
+  }
+
+  // .consultation__contact
+
+  &__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 39px;
+    margin-left: 15px;
+    margin-top: 25px;
+    @media (max-width: 767px) {
+      border-bottom: 1px solid $gray;
+      padding-bottom: 25px;
+    }
+    @media (min-width: $md) {
+      margin-left: 10px;
+    }
+    @media (min-width: $lg) {
+      margin-top: 33px;
+    }
+  }
+  // .consultation__contact
+
+  &__icon {
+    fill: $orange;
+    width: 22px;
+    height: 20px;
+  }
+
+  // .consultation__form
+
+  &__form {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5px;
+    @media (min-width: $md) {
+      box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+      margin-left: 15px;
+      margin-top: 40px;
+      padding-top: 25px;
+      padding-bottom: 45px;
+    }
+    @media (min-width: $lg) {
+      max-width: 865px;
+      height: 260px;
+      text-align: left;
+      padding-left: 65px;
+      padding-top: 35px;
+      padding-bottom: 0px;
+      margin: 40px auto 0px;
+    }
+  }
+}
+
+.form {
+  // .form__title
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    span {
+      font-weight: 700;
+      color: $orange;
+    }
+    @media (min-width: $md) {
+      font-size: 20px;
+      line-height: 22px;
+    }
+    @media (max-width: 767px) {
+      padding-left: 10px;
+    }
+  }
+
+  // .form__subtitle
+
+  &__subtitle {
+    font-style: normal;
+    margin-top: -7px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    @media (min-width: $md) {
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: -5px;
+    }
+    @media (min-width: $lg) {
+      margin-top: -10px;
+      margin-bottom: auto;
+    }
+  }
+
+  // .form__input-wrapper
+
+  &__input-wrapper {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    @media (min-width: $md) {
+      padding-left: auto;
+    }
+    @media (min-width: $lg) {
+      padding-left: 0px;
+      flex-direction: row;
+      gap: 15px;
+    }
+  }
+
+  // .form__input
+
+  &__input {
+    border: 1px solid #e5e5e5;
+    width: 290px;
+    height: 56px;
+    border-radius: 4px;
+    line-height: 22px;
+    margin: 0 auto;
+    margin-top: 23px;
+    padding-left: 15px;
+    @media (min-width: $md) {
+      width: 350px;
+      height: 56px;
+
+      margin-top: 20px;
+    }
+    @media (min-width: $lg) {
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 25px;
+      padding-left: 20px;
+      width: 240px;
+      height: auto;
+    }
+  }
+  &__input::placeholder {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  // .form__button--mobile
+
+  &__button {
+    background-color: #215359;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    width: 240px;
+    padding: 18px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px auto 0px;
+    @media (min-width: $lg) {
+      margin-top: 25px;
+      margin-left: 0px;
+    }
+  }
+}
+.consultation__icon {
+  cursor: pointer;
+  fill: $orange;
+}

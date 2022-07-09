@@ -8,7 +8,9 @@ html(lang="ru")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title #{title ? title : 'Дымоход.ру'}
     link(href="/assets/styles/main.css" rel="stylesheet")
+    link(rel="icon" href="../../assets/images/Logo.svg")
   body
+    - var contactIcon = [{src:'./assets/images/sprite.svg#vk',alt:'vk'},{src:'./assets/images/sprite.svg#telegram',alt:'telegram'},{src:'./assets/images/sprite.svg#inst',alt:'inst'},{src:'./assets/images/sprite.svg#whats_up',alt:'whats_up'}]
     main
       include ../../components/header/header
       block content

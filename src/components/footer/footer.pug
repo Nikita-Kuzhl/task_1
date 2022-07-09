@@ -1,2 +1,27 @@
-footer
+include ../../views/helpers/mixins
+- var catalog = [{name:'Дымоходы',src:'#'},{name:'Камины',src:'#'},{name:'Дымососы',src:'#'},{name:'Силикат кальция',src:'#'},{name:'Печи для дома',src:'#'},{name:'Котлы',src:'#'},{name:'Печи для бани',src:'#'},{name:'Ещё',src:'#'}]
+- var info = [{name:'Каталог',src:'#'},{name:'Полезное',src:'#'},{name:'Установка и монтаж',src:'#'},{name:'Камины',src:'#'}, {name:'Отзывы',src:'#'},{name:'Оплата и доставка',src:'#'},{name:'Ликвидация товара',src:'#'}]
+footer.footer
+  .footer__list-wrapper
+    h3.footer__title Каталог
+    ul.footer__list
+      for i in catalog
+        li.footer__item
+          a(href=i.src).footer__link=i.name
+  .footer__list-wrapper
+    h3.footer__title Информация
+    ul.footer__list
+      for i in info
+        li.footer__item
+          a(href=i.src).footer__link=i.name
 
+  .footer__contact
+    h3.footer__title Время работы
+    .footer__work-time 
+      img(src="./assets/images/wall-clock.svg", alt="time")
+      p.footer__work-time-text <span>пн-пт</span> 9:00 – 20:00   <span>сб-вс</span> 10:00 – 18:00
+    .footer__address
+      img(src="./assets/images/map.svg", alt="map")
+      |г.  Санкт - Петербург ,ул. Тамбасова д.7
+    .footer__icons
+      +spriteIcons("footer__icon")

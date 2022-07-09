@@ -1,6 +1,7 @@
-- var navLinks = [{ link: '#', name: 'Каталог товаров' },{ link: '#', name: 'Доставка и оплата' },{ link: '#', name: 'Цены' },{ link: '#', name: 'Контакты' },]
-- var contactIcon = [{src:'./assets/images/vk.svg',alt:'vk'},{src:'./assets/images/telegram.svg',alt:'telegram'},{src:'./assets/images/inst.svg',alt:'inst'},{src:'./assets/images/whats_up.svg',alt:'whats_up'}]
+include ../../views/helpers/mixins
 block variables
+  - var navLinks = [{ link: '#', name: 'Каталог товаров' },{ link: '#', name: 'Доставка и оплата' },{ link: '#', name: 'Цены' },{ link: '#', name: 'Контакты' },]
+
 
 header.header
   .header__logo
@@ -16,8 +17,7 @@ header.header
     a <span>+7 (812)</span> 509 21 98
   h1.header__call-me ПЕРЕЗВОНИТЬ МНЕ
   .header__contact
-    for i in contactIcon
-      img(src=i.src).contact__icon
+    +spriteIcons("contact__icon")
   .header__actions
     a.header__search-icon
       img(src="./assets/images/loupe 1.svg")

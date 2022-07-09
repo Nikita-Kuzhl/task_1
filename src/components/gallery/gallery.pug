@@ -1,0 +1,8 @@
+- var galleryImg = [{src:"./assets/images/img1.png",alt:"1"},{src:"./assets/images/img2.png",alt:"2"},{src:"./assets/images/img3.png",alt:"3"},{src:"./assets/images/img4.png",alt:"4"},{src:"./assets/images/img5.png",alt:"5"},{src:"./assets/images/img6.png",alt:"6"},{src:"./assets/images/img7.png",alt:"7"},{src:"./assets/images/img8.png",alt:"8"},]
+section.gallery.container
+  img(src="./assets/images/rectangle.svg").rectangle
+  h1.gallery__title Фото выполненных работ
+  p.gallery__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  .gallery__images-wrapper
+    for i in galleryImg 
+      img(src=i.src alt=i.alt).gallery__img
